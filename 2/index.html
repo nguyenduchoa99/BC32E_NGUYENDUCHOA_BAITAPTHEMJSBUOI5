@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div>
+        <!-- Nav pills -->
+        <div class="container d-flex justify-content-center pt-5">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#baitap3">Bài 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#baitap4">Bài 4</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane container active" id="baitap3">
+                <div class="bai3 m-5 p-5 container">
+                    <h1>Bài 3: Tính thuế thu nhập cá nhân</h1>
+                    <div class="d-flex justify-content-center pt-5">
+                        <input class="form-control w-25" id="ten" placeholder="Nhập họ tên" />
+                        <input class="form-control w-25" id="thuNhap" type="number" placeholder="Tổng thu nhập năm" />
+                        <input class="form-control w-25" id="soNguoi" type="number" placeholder="Số người phụ thuộc" />
+                    </div>
+                    <div class="text-center p-5">
+                        <button class="btn btn-dark" id="btnTinhTienThue">Tính Tiền Thuế</button>
+                    </div>
+                    <div class="text-center">
+                        <h3 id="ketQuaBai3">
+                            =>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="baitap4">
+                <div class="bai4 m-5 p-5 container">
+                    <h1>Bài 4: Tính tiền cáp</h1>
+                    <div class="d-flex justify-content-center pt-5">
+                        <select id="khachHang" onchange="disableInput()">
+                            <option value="0">Chọn loại khách hàng</option>
+                            <option value="nhaDan">Nhà Dân</option>
+                            <option value="doanhNghiep">Doanh Nghiệp</option>
+                        </select>
+                        <input class="form-control w-25" type="number" id="maKhachHang"
+                            placeholder="Nhập mã khách hàng" />
+                        <input class="form-control w-25" type="number" id="soKenhCap" placeholder="Số kênh cao cấp" />
+                    </div>
+                    <div class="input1 pt-3">
+                        <input class="form-control w-25" type="number" style="display:none;" id="soKetNoi"
+                            placeholder="Số kết nối" />
+
+                    </div>
+                    <div class="text-center p-5">
+                        <button class="btn btn-dark" id="btnTinhTienCap">Tính Tiền Cáp</button>
+                    </div>
+                    <div class="text-center">
+                        <h3 id="ketQuaBai4">
+                            =>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

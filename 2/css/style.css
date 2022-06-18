@@ -1,0 +1,50 @@
+.bai3{
+    background-image: url(../img/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 25px;
+}
+
+h1{
+    text-align: center;
+}
+
+.bai3 input{
+    margin-right: 10px;
+}
+
+.bai3 .btn{
+    padding: 10px 40px;
+}
+
+.bai4{
+    background-image: url(../img/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 25px;
+}
+.bai4 .btn{
+    padding: 10px 40px;
+}
+
+.bai4 select{
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.bai4 input{
+    margin-right: 20px;
+}
+
+.bai4 .input1{
+    padding-left: 140px;
+}
+
+ul li{
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-right: 10px;
+}
