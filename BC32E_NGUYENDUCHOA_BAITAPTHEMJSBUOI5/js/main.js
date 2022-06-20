@@ -22,21 +22,25 @@ function thue() {
     var soNguoi = Number(document.getElementById('soNguoi').value);
     var tienThue = thuNhap - 4e6 - 16e5 * soNguoi;
     var ketQuaBai3 = 0;
-    if (thuNhap > 0 && thuNhap <= 6e7) {
-        ketQuaBai3 = tienThue * 0.05;
-    } else if (thuNhap > 6e7 && thuNhap <= 12e7) {
-        ketQuaBai3 = tienThue * 0.1;
-    } else if (thuNhap > 12e7 && thuNhap <= 21e7) {
-        ketQuaBai3 = tienThue * 0.15;
-    } else if (thuNhap > 21e7 && thuNhap <= 384e6) {
-        ketQuaBai3 = tienThue * 0.2;
-    } else if (thuNhap > 384e6 && thuNhap <= 624e6) {
-        ketQuaBai3 = tienThue * 0.25;
-    } else if (thuNhap > 624e6 && thuNhap <= 96e7) {
-        ketQuaBai3 = tienThue * 0.3;
-    } else if (thuNhap > 96e7) {
-        ketQuaBai3 = tienThue * 0.35;
-    } else {
+    if(tienThue > 0){
+        if (thuNhap > 0 && thuNhap <= 6e7) {
+            ketQuaBai3 = tienThue * 0.05;
+        } else if (thuNhap > 6e7 && thuNhap <= 12e7) {
+            ketQuaBai3 = tienThue * 0.1;
+        } else if (thuNhap > 12e7 && thuNhap <= 21e7) {
+            ketQuaBai3 = tienThue * 0.15;
+        } else if (thuNhap > 21e7 && thuNhap <= 384e6) {
+            ketQuaBai3 = tienThue * 0.2;
+        } else if (thuNhap > 384e6 && thuNhap <= 624e6) {
+            ketQuaBai3 = tienThue * 0.25;
+        } else if (thuNhap > 624e6 && thuNhap <= 96e7) {
+            ketQuaBai3 = tienThue * 0.3;
+        } else if (thuNhap > 96e7) {
+            ketQuaBai3 = tienThue * 0.35;
+        } else {
+            alert("Số tiền thu nhập không hợp lệ");
+        }
+    }else{
         alert("Số tiền thu nhập không hợp lệ");
     }
     ketQuaBai3 = new Intl.NumberFormat("vn-VN").format(ketQuaBai3);
